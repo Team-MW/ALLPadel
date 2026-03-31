@@ -1,0 +1,20 @@
+.faqList { max-width: 700px; margin: 0 auto; }
+.faqItem { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+.faqQ {
+  width: 100%; background: none; border: none; text-align: left;
+  cursor: pointer; padding: 24px 44px 24px 16px;
+  font-size: 17px; font-weight: 600; color: var(--text-on-dark);
+  font-family: var(--ff-body); line-height: 1.4;
+  position: relative; transition: color 0.2s, background 0.3s, padding-left 0.3s;
+  border-radius: var(--radius-sm); margin-left: -16px; margin-right: -16px;
+}
+.faqQ:hover { color: var(--blanc); background: rgba(255,255,255,0.04); padding-left: 20px; }
+.faqQ::after {
+  content: '+'; position: absolute; right: 0; top: 50%;
+  transform: translateY(-50%); font-size: 20px; font-weight: 300;
+  color: var(--text-dim); transition: color 0.2s;
+}
+.faqItem.open .faqQ::after { content: '−'; color: var(--blanc); }
+.faqA { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.faqItem.open .faqA { max-height: 400px; }
+.faqAIn { padding: 0 0 24px; font-size: 16px; color: var(--text-dim); line-height: 1.70; }
