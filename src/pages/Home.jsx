@@ -28,7 +28,7 @@ const faqItems = [
 function ArrowIcon() {
   return (
     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-      <path d="M3 8h10M9 4l4 4-4 4"/>
+      <path d="M3 8h10M9 4l4 4-4 4" />
     </svg>
   )
 }
@@ -36,10 +36,10 @@ function ArrowIcon() {
 function GoogleIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24">
-      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
-      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4" />
+      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
     </svg>
   )
 }
@@ -77,10 +77,10 @@ export default function Home() {
         <section className={styles.hero} id="top">
           <div className={styles.heroBg}>
             <div className={styles.videoContainer}>
-              <iframe 
-                src="https://www.youtube-nocookie.com/embed/0n_ZBeysGB8?autoplay=1&mute=1&loop=1&playlist=0n_ZBeysGB8&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1" 
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/0n_ZBeysGB8?autoplay=1&mute=1&loop=1&playlist=0n_ZBeysGB8&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1"
                 title="Padel Background"
-                allow="autoplay; fullscreen" 
+                allow="autoplay; fullscreen"
               />
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
             <h1 className={`${styles.heroH1} r d1`}>L'incubateur de référence pour ouvrir votre club de padel.</h1>
             <p className={`${styles.heroSub} r d2`}>De l'expertise de zone au dossier de financement, nous structurons chaque étape pour garantir votre rentabilité.</p>
             <div className="r d3">
-              <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{padding:'24px 48px', fontSize:'18px'}}>
+              <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '24px 48px', fontSize: '18px' }}>
                 Entrer dans l'incubateur <ArrowIcon />
               </a>
             </div>
@@ -152,7 +152,7 @@ export default function Home() {
                 ].map((item, i) => (
                   <li key={i}>
                     <div className={styles.constatX}>
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M18 6L6 18M6 6l12 12" /></svg>
                     </div>
                     <div>
                       <strong>{item.title}</strong>
@@ -170,15 +170,15 @@ export default function Home() {
           <div className="wrap">
             <div className={styles.distinctionHead}>
               <div className="s-label s-label--light r">Ce qui fait la différence</div>
-              <h2 className="s-title r d1">Ce qui distingue un projet viable<br/>d'un projet fragile.</h2>
-              <p className="s-sub r d2" style={{color:'var(--text-secondary)'}}>Trois fondamentaux. Chacun est mesurable, chacun est vérifiable, et chacun conditionne la suite.</p>
+              <h2 className="s-title r d1">Ce qui distingue un projet viable<br />d'un projet fragile.</h2>
+              <p className="s-sub r d2" style={{ color: 'var(--text-secondary)' }}>Trois fondamentaux. Chacun est mesurable, chacun est vérifiable, et chacun conditionne la suite.</p>
             </div>
             <div className={styles.distGrid}>
               {[
                 {
                   bg: 'https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&cs=tinysrgb&w=800',
                   badge: '01 — Analyse de zone',
-                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>,
+                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="3" /><path d="M12 2v4M12 18v4M2 12h4M18 12h4" /></svg>,
                   title: 'Votre zone peut-elle vraiment soutenir un club ?',
                   desc: 'Flux, accessibilité, concurrence, bassin de population active. Pas une estimation : une analyse documentée, terrain par terrain.',
                   alert: '⚠ Sans ça : un bail signé sur une zone morte.',
@@ -187,7 +187,7 @@ export default function Home() {
                 {
                   bg: 'https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=800',
                   badge: '02 — Dimensionnement',
-                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 20h20"/><path d="M5 20V8l5-5 5 5v12"/><path d="M9 20v-4h2v4"/><path d="M17 20V12l3-2v10"/></svg>,
+                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 20h20" /><path d="M5 20V8l5-5 5 5v12" /><path d="M9 20v-4h2v4" /><path d="M17 20V12l3-2v10" /></svg>,
                   title: 'Combien de terrains, pour quel budget réel ?',
                   desc: 'Nombre de terrains, format du club, budget d\'aménagement : calibrés sur les données réelles, pas sur l\'envie du porteur.',
                   alert: '⚠ Sans ça : un modèle surdimensionné qui ne passe pas en financement.',
@@ -196,7 +196,7 @@ export default function Home() {
                 {
                   bg: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
                   badge: '03 — Séquencement',
-                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>,
+                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>,
                   title: 'Les décisions prises au bon moment.',
                   desc: 'Valider la zone avant le foncier, le foncier avant le plan, le plan avant les rendez-vous financiers. Chaque étape dans l\'ordre.',
                   alert: '⚠ Sans ça : des mois de retard et des interlocuteurs perdus.',
@@ -204,7 +204,7 @@ export default function Home() {
                 },
               ].map((card, i) => (
                 <div key={i} className={`${styles.distCard} r ${card.delay}`}>
-                  <div className={styles.distCardBg} style={{backgroundImage: `url('${card.bg}')`}}></div>
+                  <div className={styles.distCardBg} style={{ backgroundImage: `url('${card.bg}')` }}></div>
                   <div className={styles.distCardContent}>
                     <div className={styles.distTopRow}>
                       <div className={styles.distIcon}>{card.icon}</div>
@@ -226,27 +226,27 @@ export default function Home() {
             <div className={styles.etapesHead}>
               <div className="s-label r">La méthode</div>
               <h2 className="s-title r d1">Quatre étapes. Un cadre structuré.</h2>
-              <p className="s-sub r d2" style={{color:'var(--text-dim)'}}>Chaque étape produit un livrable défini. Chaque livrable répond à un niveau d'exigence. Rien n'est laissé à l'interprétation.</p>
+              <p className="s-sub r d2" style={{ color: 'var(--text-dim)' }}>Chaque étape produit un livrable défini. Chaque livrable répond à un niveau d'exigence. Rien n'est laissé à l'interprétation.</p>
             </div>
             <div className={styles.etapesTrack}>
               {[
                 {
-                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>,
+                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="3" /><path d="M12 2v4M12 18v4M2 12h4M18 12h4" /></svg>,
                   title: 'Cadrage initial',
                   desc: 'Vous complétez un questionnaire structuré. On évalue la maturité du projet, le contexte, les conditions de faisabilité.',
                 },
                 {
-                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>,
+                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" /></svg>,
                   title: 'Appel de sélection',
                   desc: 'Un échange pour valider la cohérence du projet. Si les conditions ne sont pas réunies, on vous le dit clairement.',
                 },
                 {
-                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>,
+                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>,
                   title: 'Structuration',
                   desc: 'Audit, marché, foncier, dossier de financement. Chaque livrable a un calendrier, un format, un niveau d\'exigence.',
                 },
                 {
-                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88"/></svg>,
+                  icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88" /></svg>,
                   title: 'Suivi & arbitrages',
                   desc: 'Un interlocuteur dédié pour ajuster, arbitrer, avancer. Pas de réunions sans objet, pas de reporting inutile.',
                 },
@@ -269,7 +269,7 @@ export default function Home() {
             <div className={styles.servicesHead}>
               <div className="s-label r">L'accompagnement</div>
               <h2 className="s-title r d1">Un cadre global, activé selon votre avancement.</h2>
-              <p className="s-sub r d2" style={{color:'var(--text-dim)'}}>Marché, foncier, financement, exploitation. Un seul accompagnement qui couvre l'ensemble du projet.</p>
+              <p className="s-sub r d2" style={{ color: 'var(--text-dim)' }}>Marché, foncier, financement, exploitation. Un seul accompagnement qui couvre l'ensemble du projet.</p>
             </div>
             <div className={styles.srvTrack}>
               {[
@@ -294,20 +294,18 @@ export default function Home() {
               ].map((step, i) => (
                 <div key={i} className={`${styles.srvStep} ${step.cls} r ${i > 0 ? `d${i}` : ''}`}>
                   <div className={styles.srvNum}>{step.num}</div>
-                  <div className={styles.srvContent}>
-                    <div className={styles.srvStepTop}>
-                      <div className={styles.srvStepTag}>{step.tag}</div>
-                      <div className={styles.srvTitle}>{step.title}</div>
-                    </div>
-                    <div className={styles.srvDesc}>{step.desc}</div>
-                    <div className={styles.srvPills}>
-                      {step.pills.map(p => <span key={p} className={styles.srvPill}>{p}</span>)}
-                    </div>
+                  <div className={styles.srvStepTop}>
+                    <div className={styles.srvStepTag}>{step.tag}</div>
+                    <div className={styles.srvTitle}>{step.title}</div>
+                  </div>
+                  <div className={styles.srvDesc}>{step.desc}</div>
+                  <div className={styles.srvPills}>
+                    {step.pills.map(p => <span key={p} className={styles.srvPill}>{p}</span>)}
                   </div>
                 </div>
               ))}
             </div>
-            <p className="r d3" style={{textAlign:'center', fontSize:'13px', color:'var(--text-dim)', marginTop:'32px'}}>L'appel de sélection est gratuit. Il permet de valider ensemble si un accompagnement est pertinent.</p>
+            <p className="r d3" style={{ textAlign: 'center', fontSize: '13px', color: 'var(--text-dim)', marginTop: '32px' }}>L'appel de sélection est gratuit. Il permet de valider ensemble si un accompagnement est pertinent.</p>
           </div>
         </section>
 
@@ -316,8 +314,8 @@ export default function Home() {
           <div className="wrap">
             <div className={styles.selectionHead}>
               <div className="s-label r">Sélection</div>
-              <h2 className="s-title r d1">Un accompagnement sélectif.<br/>Et c'est assumé.</h2>
-              <p className="s-sub r d2" style={{color:'var(--text-dim)'}}>Nous ne travaillons pas avec tous les porteurs qui nous contactent. C'est ce qui garantit le niveau de chaque dossier produit.</p>
+              <h2 className="s-title r d1">Un accompagnement sélectif.<br />Et c'est assumé.</h2>
+              <p className="s-sub r d2" style={{ color: 'var(--text-dim)' }}>Nous ne travaillons pas avec tous les porteurs qui nous contactent. C'est ce qui garantit le niveau de chaque dossier produit.</p>
             </div>
             <div className={styles.selGrid}>
               <div className={`${styles.selCol} ${styles.selColY} r`}>
@@ -373,8 +371,8 @@ export default function Home() {
         <section className={styles.ctaEnd}>
           <div className="wrap">
             <div className="text-cap mx-auto">
-              <h2 className="s-title r">Si une décision structurante approche,<br/>parlons-en avant qu'elle ne soit prise.</h2>
-              <div className="r d1" style={{marginTop: '44px'}}>
+              <h2 className="s-title r">Si une décision structurante approche,<br />parlons-en avant qu'elle ne soit prise.</h2>
+              <div className="r d1" style={{ marginTop: '44px' }}>
                 <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
                   Réserver votre appel de sélection <ArrowIcon />
                 </a>
