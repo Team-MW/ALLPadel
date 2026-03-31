@@ -75,19 +75,22 @@ export default function Home() {
 
         {/* ── HERO ── */}
         <section className={styles.hero} id="top">
-          <div className={styles.heroIn}>
-            <div className={`${styles.heroBadge} r`}>Sélection sur profil</div>
-            <h1 className="r d1">L'incubateur pour ceux qui veulent réellement ouvrir un club de padel.</h1>
-            <p className={`${styles.heroSub} r d2`}>Marché, foncier, financement&nbsp;: chaque étape structurée pour aboutir.</p>
-            <div className="r d3">
-              <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-                Réserver votre appel de sélection <ArrowIcon />
-              </a>
+          <div className={styles.heroBg}>
+            <div className={styles.videoContainer}>
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/0n_ZBeysGB8?autoplay=1&mute=1&loop=1&playlist=0n_ZBeysGB8&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1" 
+                title="Padel Background"
+                allow="autoplay; fullscreen" 
+              />
             </div>
-            <div className={`${styles.heroProofs} r d3`}>
-              <span className={styles.heroProof}>Méthode issue du terrain</span>
-              <span className={styles.heroProof}>+50 dossiers analysés partout en France</span>
-              <span className={styles.heroProof}>Défendable devant un partenaire financier</span>
+          </div>
+          <div className={styles.heroIn}>
+            <h1 className={`${styles.heroH1} r d1`}>L'incubateur de référence pour ouvrir votre club de padel.</h1>
+            <p className={`${styles.heroSub} r d2`}>De l'expertise de zone au dossier de financement, nous structurons chaque étape pour garantir votre rentabilité.</p>
+            <div className="r d3">
+              <a href={TYPEFORM_URL} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{padding:'24px 48px', fontSize:'18px'}}>
+                Entrer dans l'incubateur <ArrowIcon />
+              </a>
             </div>
           </div>
         </section>
@@ -290,14 +293,16 @@ export default function Home() {
                 },
               ].map((step, i) => (
                 <div key={i} className={`${styles.srvStep} ${step.cls} r ${i > 0 ? `d${i}` : ''}`}>
-                  <div className={styles.srvStepDot}>{step.num}</div>
-                  <div className={styles.srvStepTop}>
-                    <div className={styles.srvStepTag}>{step.tag}</div>
-                    <div className={styles.srvTitle}>{step.title}</div>
-                  </div>
-                  <div className={styles.srvDesc}>{step.desc}</div>
-                  <div className={styles.srvPills}>
-                    {step.pills.map(p => <span key={p} className={styles.srvPill}>{p}</span>)}
+                  <div className={styles.srvNum}>{step.num}</div>
+                  <div className={styles.srvContent}>
+                    <div className={styles.srvStepTop}>
+                      <div className={styles.srvStepTag}>{step.tag}</div>
+                      <div className={styles.srvTitle}>{step.title}</div>
+                    </div>
+                    <div className={styles.srvDesc}>{step.desc}</div>
+                    <div className={styles.srvPills}>
+                      {step.pills.map(p => <span key={p} className={styles.srvPill}>{p}</span>)}
+                    </div>
                   </div>
                 </div>
               ))}
