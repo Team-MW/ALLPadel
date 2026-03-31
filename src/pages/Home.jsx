@@ -267,9 +267,9 @@ export default function Home() {
         <section className={styles.services} id="services">
           <div className="wrap">
             <div className={styles.servicesHead}>
-              <div className="s-label r">L'accompagnement</div>
+              <div className="s-label s-label--light r">L'accompagnement</div>
               <h2 className="s-title r d1">Un cadre global, activé selon votre avancement.</h2>
-              <p className="s-sub r d2" style={{ color: 'var(--text-dim)' }}>Marché, foncier, financement, exploitation. Un seul accompagnement qui couvre l'ensemble du projet.</p>
+              <p className="s-sub r d2" style={{ color: 'var(--text-secondary)' }}>Marché, foncier, financement, exploitation. Un seul accompagnement qui couvre l'ensemble du projet.</p>
             </div>
             <div className={styles.srvTrack}>
               {[
@@ -294,18 +294,20 @@ export default function Home() {
               ].map((step, i) => (
                 <div key={i} className={`${styles.srvStep} ${step.cls} r ${i > 0 ? `d${i}` : ''}`}>
                   <div className={styles.srvNum}>{step.num}</div>
-                  <div className={styles.srvStepTop}>
-                    <div className={styles.srvStepTag}>{step.tag}</div>
-                    <div className={styles.srvTitle}>{step.title}</div>
-                  </div>
-                  <div className={styles.srvDesc}>{step.desc}</div>
-                  <div className={styles.srvPills}>
-                    {step.pills.map(p => <span key={p} className={styles.srvPill}>{p}</span>)}
+                  <div className={styles.srvContent}>
+                    <div className={styles.srvStepTop}>
+                      <div className={styles.srvStepTag}>{step.tag}</div>
+                      <div className={styles.srvTitle}>{step.title}</div>
+                    </div>
+                    <div className={styles.srvDesc}>{step.desc}</div>
+                    <div className={styles.srvPills}>
+                      {step.pills.map(p => <span key={p} className={styles.srvPill}>{p}</span>)}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="r d3" style={{ textAlign: 'center', fontSize: '13px', color: 'var(--text-dim)', marginTop: '32px' }}>L'appel de sélection est gratuit. Il permet de valider ensemble si un accompagnement est pertinent.</p>
+            <p className="r d3" style={{ textAlign: 'center', fontSize: '13px', color: 'var(--text-secondary)', marginTop: '32px' }}>L'appel de sélection est gratuit. Il permet de valider ensemble si un accompagnement est pertinent.</p>
           </div>
         </section>
 
@@ -345,7 +347,7 @@ export default function Home() {
           <div className="wrap">
             <div className={styles.histoireLayout}>
               <div className={styles.histoireHead}>
-                <div className="s-label r">Qui sommes-nous</div>
+                <div className="s-label s-label--light r">Qui sommes-nous</div>
               </div>
               <div className={`${styles.histoireText} r d1`}>
                 <p>On n'est pas arrivés dans le padel par hasard. Avant PadelProgram, on était <strong>apporteurs d'affaires pour des fournisseurs de terrains de padel</strong>. On a vu le marché de l'intérieur : les constructeurs, les exploitants, les projets qui passent, et ceux qui échouent.</p>
